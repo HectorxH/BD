@@ -9,6 +9,8 @@ Pwd=pass"""
 cnxn = pyodbc.connect(connect_string)
 
 def create_poyo():
+    """Creates the table POYO from the data provided in the file pokemon.csv
+    """
     df = pd.read_csv('pokemon.csv', usecols=["#","Name","Type 1", "Type 2", "HP","Legendary"])
 
     sql = '''--sql
@@ -43,6 +45,8 @@ def create_poyo():
 
 
 def drop_all():
+    """Drops all the tables.
+    """
     cursor = cnxn.cursor()
     drop_cursor = cnxn.cursor()
     cursor.execute('SELECT table_name FROM user_tables;')
@@ -52,16 +56,22 @@ def drop_all():
 
         print(sql)
         drop_cursor.execute(sql)
-        print("Table sucesfully deleated.")
+        print("Table {} successfully deleted.".format(row.TABLE_NAME))
 
     cnxn.commit()
 
 
 def print_full_table(table_name, size=25):
+    """Prints all rows and all columns from a given table in batches of size elements.
+
+    Args:
+        table_name (str): Target table.
+        size (int, optional): Size of the batches. Defaults to 25.
+    """
     table_name = table_name.upper()
     with cnxn.cursor() as cursor:
         cursor.execute("SELECT column_name FROM USER_TAB_COLUMNS WHERE table_name = ?;", table_name)
-        cols = [col[0] for col in cursor]
+        cols = [col.COLUMN_NAME for col in cursor]
 
         cursor.execute("SELECT * FROM {};".format(table_name))
         rows = cursor.fetchmany(size)
