@@ -7,7 +7,7 @@ El Equipo Rocket creó una nueva cepa de PokeRus la cual posee cualidades dañin
 ## TO DO
 - [ ] Realizar una aplicacion standalone (Puede ser mediante terminal)
 - [X] Cargar el archivo de _"pokemon.csv"_ en la base de datos con los criterios de la tabla POYO.
-- [ ] Añadir registros aleatorios que siguan las reglas definidas en "Tarea 1.pdf" y sean consistentes con los datos de la tabla POYO.
+- [X] Añadir registros aleatorios que siguan las reglas definidas en "Tarea 1.pdf" y sean consistentes con los datos de la tabla POYO.
 - [ ] Dar soporte para realizar acciones de tipo CRUD.
 - [ ] Permitir ingresar un pokemon.
 - [ ] Permitir obtener los 10 pokemon con mayor prioridad.
