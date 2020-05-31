@@ -5,18 +5,18 @@ El Equipo Rocket creó una nueva cepa de PokeRus la cual posee cualidades dañin
 
 
 ## TO DO
-- [ ] Realizar una aplicacion standalone (Puede ser mediante terminal)
+- [X] Realizar una aplicacion standalone (Puede ser mediante terminal)
 - [X] Cargar el archivo de _"pokemon.csv"_ en la base de datos con los criterios de la tabla POYO.
 - [X] Añadir registros aleatorios que siguan las reglas definidas en "Tarea 1.pdf" y sean consistentes con los datos de la tabla POYO.
 - [ ] Dar soporte para realizar acciones de tipo CRUD.
 - [ ] Permitir ingresar un pokemon.
-- [ ] Permitir obtener los 10 pokemon con mayor prioridad.
-- [ ] Permitir obtener los 10 pokemon con menor prioridad.
-- [ ] Permitir obtener todos los pokemon con un estado especifico.
-- [ ] Permitir obtener todos los pokemon legendarios.
+- [X] Permitir obtener los 10 pokemon con mayor prioridad.
+- [X] Permitir obtener los 10 pokemon con menor prioridad.
+- [X] Permitir obtener todos los pokemon con un estado especifico.
+- [X] Permitir obtener todos los pokemon legendarios.
 - [ ] Permitir obtener el pokemon que lleva mas tiempo ingresado.
 - [ ] Permitir obtener el nombre del pokemon mas repetido.
-- [ ] Permitir obtener el Nombre, HP actual, HP maxima y prioridad de todos los pokemon ordenados por prioridad. 
+- [X] Permitir obtener el Nombre, HP actual, HP maxima y prioridad de todos los pokemon ordenados por prioridad. 
 - [ ] Implementar que si el sansanito se encuentra lleno y se intenta ingresar un pokemon con una prioridad mas alta que la prioridad mas baja presente en la tabla, ingresarlo y eliminar este ultimo.
-- [ ] Implementar una _vista_ que sea util.
+- [X] Implementar una _vista_ que sea util.
 - [ ] Implementar un _trigger_ que sea util.
