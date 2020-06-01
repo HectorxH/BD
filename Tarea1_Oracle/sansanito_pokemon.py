@@ -45,6 +45,7 @@ Escribe ? para obtener informacion sobre los comandos.
         logic.create_poyo()
         logic.create_sansanito()
         logic.create_views()
+        logic.create_triggers()
 
     def do_drop(self, inp):
         """
